@@ -11,4 +11,9 @@ To reproduce:
      
 Every time you return to "Go to A" link again from home or B component, you get additional new leak.
 
+Project contains 2 methods how to fix memory leaks:
+
+1. Automatic `rxjsAutoUnsubscribe` decorator.
+2. Dedicated destroy$ stream.
+
 To fix leak uncomment code in ngOnInit function.
